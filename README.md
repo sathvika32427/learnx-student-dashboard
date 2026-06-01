@@ -1,36 +1,86 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# LearnX Student Dashboard
 
-## Getting Started
+A futuristic student learning dashboard built using Next.js, Supabase, Tailwind CSS, and Framer Motion for the Frontend Intern Challenge.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- Dark mode Bento Grid dashboard
+- Responsive sidebar and mobile navigation
+- Dynamic course data from Supabase
+- Hero greeting section
+- Activity tracking tile
+- Animated course cards
+- Framer Motion interactions
+- Loading and error states
+- Server-side data fetching
+
+## Tech Stack
+
+- Next.js 16 (App Router)
+- React
+- Tailwind CSS
+- Supabase
+- Framer Motion
+- Lucide React
+
+## Architecture
+
+### Server Components
+
+Course data is fetched from Supabase using Next.js Server Components to keep database access secure and improve performance.
+
+### Client Components
+
+Interactive UI elements such as:
+
+- Sidebar navigation
+- Animations
+- Hover effects
+- Progress indicators
+
+are implemented as Client Components.
+
+## Environment Variables
+
+Create a `.env.local` file:
+
+```env
+NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+A sample file is provided in:
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+```text
+.env.example
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Installation
 
-## Learn More
+```bash
+npm install
+npm run dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Production Build
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm run build
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Project Structure
 
-## Deploy on Vercel
+```text
+src/
+├── app/
+├── components/
+├── lib/
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Deployment
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The application is designed to be deployed on Vercel.
+
+## Author
+
+Erumalla Sathvika
